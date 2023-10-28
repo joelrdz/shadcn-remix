@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { Button } from "~/components/ui/button";
 
 export const meta: MetaFunction = () => {
   return [
@@ -10,7 +11,7 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div className="grid place-items-center h-screen">
-      Remix is Amazing!
+      <Button size="lg" variant="outline">Click Me!</Button>
     </div>
   );
 }
